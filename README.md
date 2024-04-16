@@ -1,5 +1,6 @@
 # Understanding_Github
 Reading up on github
+
 Git and Github are very popular tools used nowadays for version control.
 Version control refers to a system that records changes (versions) to a file or set of files over the time. In other words, these versions will help track the changes in  codes/projects and, if necessary, undo those changes as well.
 Git vs Github
@@ -26,16 +27,22 @@ HEAD is a place where your working directory is now.
 
 Git Commands
 
+
 Git configuration 
+
 <git config --global user.name “Your Name”> : This command sets the name that will be attached to your commits and tags. 
 <git config --global user.email “you@example. Com”> : This command sets the e-mail address that will be attached to your commits and tags.
 <git config --global color.ui auto> : This command enables some colorization of Git output.
 
+
 Starting a project
+
 git init [project name] : It creates a new local repository in the current directory. If [project name] is provided, Git will create a new directory named [project name] and will initialize a repository inside it. 
 git clone : Command downloads a project with the entire history from the remote repository.
 
+
 Day-to-day work 
+
 git status : Command displays the status of your working directory. Options include new, staged, and modified files. It will retrieve branch name, current commit identifier, and changes pending commit. 
 git add [file] : Command adds a file to the staging area. Use. in place of the full file path to add all changed files from the current directory down into the directory tree. 
 git diff [file] : Command shows changes between working directory and staging area. 
@@ -45,35 +52,47 @@ git reset ...] : Command reverts some paths in the index (or the whole index) to
 git commit : Command creates a new commit from changes added to the staging area. The commit must have a message.
 git rm [file] : Command removes file from working directory and staging area.
 
+
 Storing your work
+
 git stash : Command puts current changes in your working directory into stash for later use. 
 git stash pop: Command applies stored stash content into working directory, and clear stash. 
 git stash drop : This deletes a specific stash from all your previous stashes.
 
+
 Git branching model 
+
 git branch [-a] : Used to list all local branches in the repository. Adding -a: to show all branches (with remote).
 git branch [branch_name] : Used to create a new branch, referencing the current HEAD. 
 git rebase [branch_name] : Used to apply commits of the current working branch and apply them to the HEAD of [branch] to make the history of your branch more linear. 
 git checkout [-b] [branch_name] : Used to switch working directory to the specified branch. With -b: Git will create the specified branch if it does not exist. git merge [branch_name] Join specified [branch_name] branch into your current branch (the one you are on currently). git branch -d [branch_ name] Remove selected branch, if it is already merged into any other. -D instead of -d forces deletion.
 
-Inspect history 
+
+Inspect history
+
 git log [-n count] : Used to list commit history of current branch. -n count limits list to last n commits. 
 git log --oneline --graph --decorate : Provides an overview with reference labels and history graph. One commit per line. 
 git log ref . : Used to list commits that are present on the current branch and not merged into ref. A ref can be a branch name or a tag name. 
 git log .ref : Used to list commits that are present on ref and not merged into current branch. 
 git reflog : Used to list operations (e.g. checkouts or commits) made on local repositories.
 
+
 Tagging commits 
+
 git tag : Used to list all tags. 
 git tag [name] [commit sha] : Used to create a tag reference named name for current commit. Add commit sha to tag a specific commit instead of current one. 
 git tag -a [name] [commit sha] : Used to create a tag object named name for current commit. 
 git tag -d [name] Remove a tag from the local repository.
 
+
 Reverting changes 
+
 git reset [--hard] [target reference] : It switches the current branch to the target reference, leaving a difference as an uncommitted change. When --hard is used, all changes are discarded. It's easy to lose uncommitted changes with --hard. 
 git revert [commit sha] : used to create a new commit, reverting changes from the specific commit. It generates an inversion of changes.
 
+
 Synchronizing repositories 
+
 git fetch [remote] : used to fetch changes from the remote, but not update tracking branches. 
 git fetch --prune [remote] : Used to delete remote Refs that were removed from the remote repository. 
 git pull [remote] : Used to fetch changes from the remote and merge the current branch with its upstream. 
