@@ -1,0 +1,43 @@
+/* Dropdown Container */
+.dropdown {
+    margin-bottom: 50px;
+  }
+ 
+  /* Dropdown Label */
+  .dropdown p {
+    margin-bottom: 5px;
+    font-weight:500;
+    font-size: 22px;
+  }
+ 
+  /* Dropdown Menu */
+  .dropdown select {
+    padding: 8px 40px;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #dedf86;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+  }
+/* Next Button */
+.next-button {
+    margin-left: auto; /* Add this line to move the button to the right */
+    padding-left: 500px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #dedf86; /* Blue color for button */
+    color: #454343;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .next-button:hover {
+    background-color: #fee907; /* Darker blue on hover */
+  }
+  .custom-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }

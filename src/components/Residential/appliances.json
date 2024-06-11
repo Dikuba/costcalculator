@@ -1,0 +1,27 @@
+[
+    { "name": "Refrigerator", "powerRating": 500 },
+    { "name": "Washing Machine", "powerRating": 1500 },
+    { "name": "Microwave", "powerRating": 1000 },
+    { "name": "Television", "powerRating": 200 },
+    { "name": "Air Conditioner", "powerRating": 2000 },
+    { "name": "Clothes Dryer", "powerRating": 3000 },
+    { "name": "Dishwasher", "powerRating": 1500 },
+    { "name": "Electric Oven", "powerRating": 4000 },
+    { "name": "Cooktop", "powerRating": 3000 },
+    { "name": "Electric Kettle", "powerRating": 1500 },
+    { "name": "Toaster", "powerRating": 1000 },
+    { "name": "Coffee Maker", "powerRating": 1000 },
+    { "name": "Blender", "powerRating": 500 },
+    { "name": "Food Processor", "powerRating": 800 },
+    { "name": "Hair Dryer", "powerRating": 1500 },
+    { "name": "Vacuum Cleaner", "powerRating": 1000 },
+    { "name": "Ceiling Fan", "powerRating": 75 },
+    { "name": "Electric Heater", "powerRating": 2000 },
+    { "name": "Water Heater", "powerRating": 4000 },
+    { "name": "Laptop/Desktop Computer", "powerRating": 100 },
+    { "name": "Router/Modem", "powerRating": 10 },
+    { "name": "Printer", "powerRating": 500 },
+    { "name": "Smartphone Charger", "powerRating": 10 },
+    { "name": "LED Light Bulb", "powerRating": 10 }
+  ]
+  

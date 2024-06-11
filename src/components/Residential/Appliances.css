@@ -1,0 +1,103 @@
+/* Appliances.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc; /* Set a light background color */
+}
+
+.quote-container {
+  margin-top: 40px;
+}
+
+.quote {
+  background-color: #fef9d9; /* Set white background for the quote section */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.quote-header {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0; /* Add separator line */
+}
+
+.quote-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d3748; /* Darken text color */
+}
+
+.quote-info {
+  padding: 20px;
+  background-color: #fefcf0; /* Set light gray background for quote info */
+  border-bottom: 1px solid #FAF8EB; /* Add separator line */
+}
+
+.quote-info p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #4a5568; /* Darken text color */
+}
+
+.quote-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quote-table th, .quote-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #cbcbd0; /* Add separator line */
+}
+
+.quote-totals td {
+  font-weight: bold;
+}
+
+.print-button {
+  margin-top: 20px;
+  background-color: #4f4d3b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #quote, #quote * {
+    visibility: visible;
+  }
+  #quote {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px;
+    background-color: #FAF8EB;
+  }
+  #quote h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .quote-container, .quote-container * {
+    visibility: visible;
+  }
+  .quote-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .quote {
+    background-color: #faf2cc !important; /* Adjust this color to match your bg-yellow-50 */
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}

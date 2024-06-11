@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is above other content */
+  }
+  
+  .container {
+    padding-top: 60px; /* Adjust padding to avoid content being hidden behind the sticky header */
+  }
+  /* Header.css or styles.css */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 0, 0.5);
+  }
+  
+  .container {
+    padding-top: 60px;
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  .custom-link {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-button {
+      width: 100%;
+    }
+  
+    .container {
+      padding-top: 60px; /* Adjust padding to avoid content being hidden behind the sticky header */
+    }
+  
+    .faq-header {
+      padding: 1rem;
+    }
+  
+    .faq-content {
+      padding: 1rem;
+    }
+  }
+  
